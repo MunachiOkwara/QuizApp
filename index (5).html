@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./style (4).css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+    </style>
+</head>
+
+<body onload="firstprop()">
+        <main class="total-container" id="total-container">
+            <div class="formtotal " id="formtotal">
+                <img src="quiz3.jpg" class="form-img" alt="">
+                <form action="" class="form" id="form">
+                <h1>Welcome</h1>
+                <label for="">FirstName</label>
+                <input style="outline: none;" type="text" id ="first" name="first" required><br>
+                <label for="">LastName</label>
+             <input style="outline: none;" type="text" id ="last" name="last" required><br>
+             <label for="">Student ID</label>
+             <input style="outline: none;" type="tel" id="id" name="id" required><br>
+             <button type="submit" class="submit" id="submitform" >Submit</button>
+            </form>
+        </div>
+        <div class="container " id="container">
+            <div class="user" id="user"></div>
+            <!-- timer and score -->
+            <div class="top">   
+                <div class="timer" id="timer">00:00</div>
+                <div class="score">
+                    <span id="user-score" class="hide">0</span>
+                <span class="hide" id="hide"> / </span>
+                    <span id="total-score" class="hide" >0</span>
+                </div>
+            </div>
+            <!-- question and optiions -->
+            <div class="content" id="question-area">
+                <div id="question-text"></div>
+                <div class="options">
+                    <button class="btn btn-option clicked" id="option1" onclick="function clicked(){trueBtn.classList.add('clicked')}"></button>
+                    <button class="btn btn-option clicked" id="option2"></button>
+                    <button class="btn btn-option clicked" id="option3"></button>
+                    <button class="btn btn-option clicked" id="option4"></button>
+                </div>
+            </div>
+            <!-- button controls -->
+            <div class="controls">
+                <button class="btn btn-restart" id="restart">Restart</button>
+                <button class="btn btn-prev" id="prev"><</button>
+                <button class="btn btn-next" id="next">></button>
+                <button class="btn btn-submit" id="submit">Submit</button>
+            </div>
+        </div>
+    </main>
+   
+<script src="script.js"></script>
+</body>
+</html>

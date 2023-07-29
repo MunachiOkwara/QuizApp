@@ -1,0 +1,133 @@
+/* //calling html id and assigning to javascript constant variables
+const restartBtn = document.getElementById("restart");
+const prevBtn = document.getElementById("prev");
+const nextBtn = document.getElementById("next");
+const submitBtn = document.getElementById("submit");
+const option1 = document.getElementById("option1");
+const option2 = document.getElementById("option2");
+const option3 = document.getElementById("option3");
+const option4 = document.getElementById("option4");
+const userScore = document.getElementById("user-score");
+const totalScore = document.getElementById("total-score");
+const questionText = document.getElementById("question-text")
+const timer = document.getElementById("timer");
+
+//declaring a tracker for score and current question
+let currentQuestion = 0;
+let score = 0;
+
+//initializing objects in array for total number of questions
+let questions=[
+    //each answer has 2 objects for true and false
+    {
+        question: "Is The Curve the best programming learning institution?",
+        answers: [
+            {option: "Yes", answer: true},
+            {option: "No", answer: false},
+            {option: "Maybe", answer: false},
+            {option: "Too much stress", answer: false}
+        ]
+    },
+    {
+        question: "What is better if you wish to achieve success?",
+        answers: [
+            {option: "Hard Work", answer: false},
+            {option: "Smart Work", answer: true},
+            {option: "kid work", answer: false},
+            {option: "No work", answer: false}
+        ]
+    },
+    {
+ 
+        question: "Complete the phrase: Time and ___ wait for none.",
+        answers: [
+            {option: "Batman", answer: false},
+            {option: "Tide", answer: true},
+            {option: "Hide", answer: false},
+            {option: "The Curve", answer: false}
+        ]
+    },
+    {
+ 
+        question: "What does HTML stand for?",
+        answers: [
+            {option: "Hypertext Backup Language", answer: false},
+            {option: "HyperTutor Makeup Language", answer: false},
+            {option: "Hypertext Markup Language", answer: true},
+            {option: "Igbo and Yoruba Language", answer: false}
+        ]
+    },
+    {
+ 
+        question: "What is the brain of a computer system?",
+        answers: [
+            {option: "DNS", answer: false},
+            {option: "GPU", answer: false},
+            {option: "UPS", answer: false},
+            {option: "CPU", answer: true}
+        ]
+    },
+    {
+ 
+        question: "Does Ebuka like Yoruba People?",
+        answers: [
+            {option: "No", answer: false},
+            {option: "Yes", answer: true},
+            {option: "Omo", answer: false},
+            {option: "Maybe", answer: false}
+        ]
+    },
+    {
+ 
+        question: "What is an Object?",
+        answers: [
+            {option: "Blueprint of a class", answer: true},
+            {option: "An entity", answer: false},
+            {option: "Footballer", answer: false},
+            {option: "Anything with property and value", answer: false}
+        ]
+    },
+    {
+ 
+        question: "Is Festac better than Wilmer?",
+        answers: [
+            {option: "Maybe", answer: false},
+            {option: "No", answer: false},
+            {option: "Yes", answer: true},
+            {option: "Not sure", answer: false}
+        ]
+    },
+    {
+ 
+        question: "What does URL stand for?",
+        answers: [
+            {option: "United Fans Club", answer: false},
+            {option: "Uniform Revenue Letter", answer: false},
+            {option: "Union Road Location", answer: false},
+            {option: "Uniform Resource Locator", answer:true}
+        ]
+    },
+    {
+ 
+        question: "Is the Quiz App the best group",
+        answers: [
+            {option: "No", answer: false},
+            {option: "Yes", answer: true},
+            {option: "Maybe", answer: false},
+            {option: "Blehhh!!", answer: false}
+        ]
+    }
+    //add more questions
+
+]
+
+
+
+
+
+<div class="options">
+<button class="btn btn-option" id="option1"></button>
+<button class="btn btn-option" id="option2"></button>
+<button class="btn btn-option" id="option3"></button>
+<button class="btn btn-option" id="option4"></button>
+</div> */
